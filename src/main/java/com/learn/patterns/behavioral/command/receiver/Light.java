@@ -4,7 +4,10 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class Light {
-
+    public static enum LightCommand{
+        ON,
+        OFF
+    }
     private boolean isOn;
 
     public void switchOn(){
